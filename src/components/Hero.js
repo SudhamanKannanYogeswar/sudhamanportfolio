@@ -29,13 +29,6 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-6 py-24">
         <motion.div variants={container} initial="hidden" animate="show" className="max-w-3xl">
-          <motion.div variants={item}>
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-accent bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 px-3 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              Open to new opportunities · Bengaluru
-            </span>
-          </motion.div>
-
           <motion.h1 variants={item} className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-[1.08] mb-6">
             Sudhaman<br />
             <span className="text-gradient">Product Owner</span><br />

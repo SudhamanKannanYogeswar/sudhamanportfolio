@@ -21,22 +21,22 @@ export default function About() {
             <FadeIn>
               <span className="text-xs font-semibold tracking-widest uppercase text-accent mb-3 block">About Me</span>
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Engineer → Analyst → Product Owner. Always led by data.
+                B2C at scale. B2B from scratch. Always outcome-driven.
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                I started out as a Quality Engineer at VMAX Engineers, where I led NDT teams and learned that precision and process discipline are the foundation of everything. That mindset carried me into the world of data and product.
+                At IDP Education, I owned product across both B2C and B2B surfaces — two very different problem spaces that sharpened how I think about users, value, and scale.
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                After completing my MBA from Pondicherry University and a B.Tech in Mechanical Engineering, I joined IDP Education as an intern analyst — and never looked back. Over four years I grew from building dashboards to owning the full product strategy for AI-powered B2C and SaaS platforms across 60+ countries.
+                On the B2C side, I led the AI-powered student platform used across 60+ countries — optimising conversion funnels, running A/B experiments, and shipping an LLM chatbot that reduced manual query resolution by 35%. The focus was always on reducing friction and increasing qualified lead volume at scale.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                Outside of work, I founded Product Decoded — a community helping aspiring PMs break into the field. My edge is the intersection of product thinking and data capability: I can define the strategy, instrument the analytics, run the experiments, and tell the story to stakeholders — end to end.
+                On the B2B side, I built form.idp.com — a self-serve Lead Generation SaaS platform used by 80+ internal stakeholders across marketing and sales teams. This meant thinking in terms of workflows, configurability, and time-to-value for business users rather than end consumers. Shipping the Form Builder cut go-live time by 40% and grew qualified lead volume by 18%.
               </p>
             </FadeIn>
             <FadeIn delay={0.25}>
