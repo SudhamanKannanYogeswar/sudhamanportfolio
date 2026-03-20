@@ -1,6 +1,10 @@
+const path = require("path");
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+module.exports = {
+  content: [
+    path.join(__dirname, "./src/**/*.{js,jsx,ts,tsx}"),
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -16,8 +20,8 @@ export default {
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: 0, transform: "translateY(16px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
+          "0%": { opacity: "0", transform: "translateY(16px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
     },

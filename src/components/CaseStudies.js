@@ -17,7 +17,7 @@ function CaseStudyCard({ study, index }) {
       initial={{ opacity: 0, y: 32 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.55, delay: index * 0.1, ease: "easeOut" }}
-      className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden hover:border-accent dark:hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1 flex flex-col"
+      className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden hover:border-accent dark:hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col"
     >
       <div className="h-1 w-full bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="p-6 flex flex-col flex-1">

@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import Providers from "./providers";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-gray-950 text-gray-900 dark:text-white`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <Providers>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
