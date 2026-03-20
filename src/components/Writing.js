@@ -13,7 +13,7 @@ function ArticleCard({ article, index }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
     <motion.a ref={ref} href={article.url} target="_blank" rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.55, delay: index * 0.1, ease: "easeOut" }}
+      initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.55, delay: index * 0.1, ease: "easeOut" }}
       className="group block bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-accent dark:hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
       <div className="flex items-center justify-between mb-4">
         <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${tagColors[article.tag] || tagColors.Analytics}`}>{article.tag}</span>

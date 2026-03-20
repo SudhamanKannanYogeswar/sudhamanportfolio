@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { useContent } from "../hooks/useContent";
 
 function TimelineItem({ item, index, total }) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
+  const { ref } = useInView({ triggerOnce: true, threshold: 0.15 });
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
+    <motion.div ref={ref} initial={{ opacity: 0 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
       className="relative pl-8 pb-12 last:pb-0">
       {index < total - 1 && <div className="absolute left-[11px] top-6 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />}
       <div className="absolute left-0 top-1.5 w-5 h-5 rounded-full border-2 border-accent bg-white dark:bg-gray-950 shadow-sm shadow-indigo-500/20" />

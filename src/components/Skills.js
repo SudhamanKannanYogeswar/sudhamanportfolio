@@ -10,9 +10,9 @@ const categoryMeta = {
 };
 
 function SkillCategory({ name, items, meta, index }) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
+  const { ref } = useInView({ triggerOnce: true, threshold: 0.15 });
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
+    <motion.div ref={ref} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
       className={`rounded-2xl border p-6 ${meta.bg} ${meta.border}`}>
       <div className="flex items-center gap-3 mb-5">
         <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${meta.color} flex items-center justify-center text-lg shadow-sm`}>{meta.icon}</div>
@@ -20,7 +20,7 @@ function SkillCategory({ name, items, meta, index }) {
       </div>
       <div className="flex flex-wrap gap-2">
         {items.map((skill, i) => (
-          <motion.span key={skill} initial={{ opacity: 0, scale: 0.85 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: index * 0.12 + i * 0.05 }}
+          <motion.span key={skill} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: index * 0.12 + i * 0.05 }}
             className={`text-sm font-medium px-3 py-1.5 rounded-lg ${meta.tag}`}>
             {skill}
           </motion.span>
