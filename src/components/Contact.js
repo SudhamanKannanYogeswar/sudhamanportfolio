@@ -15,7 +15,7 @@ export default function Contact() {
     <section id="contact" className="bg-white dark:bg-gray-950 py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
-          <motion.div ref={ref} initial={{ opacity: 0, y: 24 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, ease: "easeOut" }}>
+          <motion.div ref={ref} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.6, ease: "easeOut" }}>
             <span className="text-xs font-semibold tracking-widest uppercase text-accent mb-3 block">Get in Touch</span>
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">Let's build something great together.</h2>
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">Whether you're hiring, exploring a collaboration, or just want to talk product — my inbox is open.</p>
@@ -47,7 +47,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}>
+          <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}>
             {sent ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-16">
                 <div className="text-5xl mb-4">✅</div>

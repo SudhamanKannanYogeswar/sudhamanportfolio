@@ -15,7 +15,8 @@ function CaseStudyCard({ study, index }) {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 32 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.55, delay: index * 0.1, ease: "easeOut" }}
       className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden hover:border-accent dark:hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col"
     >
