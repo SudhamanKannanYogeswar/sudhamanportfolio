@@ -41,18 +41,40 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={item} className="flex flex-wrap gap-3 mb-8">
-            <a href="https://untoldopinion.com" target="_blank" rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-105 transition-all duration-200">
-              <span className="w-1.5 h-1.5 rounded-full bg-white/80 animate-pulse" />
+            {/* Founder badge with continuous glow pulse */}
+            <motion.a
+              href="https://untoldopinion.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              animate={{ boxShadow: ["0 0 12px 2px rgba(99,102,241,0.4)", "0 0 28px 8px rgba(139,92,246,0.7)", "0 0 12px 2px rgba(99,102,241,0.4)"] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              whileHover={{ scale: 1.06 }}
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 text-white text-sm font-semibold"
+            >
+              <motion.span
+                animate={{ opacity: [1, 0.3, 1] }}
+                transition={{ duration: 1.2, repeat: Infinity }}
+                className="w-1.5 h-1.5 rounded-full bg-white"
+              />
               Founder · untoldopinion.com
               <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
-            </a>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-violet-500 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-purple-500/30">
-              <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
+            </motion.a>
+
+            {/* Product Bros badge with offset glow pulse */}
+            <motion.span
+              animate={{ boxShadow: ["0 0 12px 2px rgba(139,92,246,0.4)", "0 0 28px 8px rgba(168,85,247,0.7)", "0 0 12px 2px rgba(139,92,246,0.4)"] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-violet-500 to-purple-600 text-white text-sm font-semibold"
+            >
+              <motion.span
+                animate={{ opacity: [1, 0.3, 1] }}
+                transition={{ duration: 1.2, repeat: Infinity, delay: 0.6 }}
+                className="w-1.5 h-1.5 rounded-full bg-white"
+              />
               Founding Member · Product Bros
-            </span>
+            </motion.span>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-wrap gap-4 mb-20">
