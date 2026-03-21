@@ -35,10 +35,20 @@ export default function Hero() {
             <span className="text-gray-400 dark:text-gray-500 text-4xl sm:text-5xl lg:text-6xl font-bold">AI & SaaS Builder</span>
           </motion.h1>
 
-          <motion.p variants={item} className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed mb-10">
+          <motion.p variants={item} className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed mb-6">
             I build scalable AI and SaaS products using data, user insights, and experimentation.
             From 0→1 platforms to LLM-powered features — outcome-obsessed, execution-driven.
           </motion.p>
+
+          <motion.div variants={item} className="flex flex-wrap gap-2 mb-8">
+            <a href="https://untoldopinion.com" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-medium hover:bg-indigo-100 dark:hover:bg-indigo-900 transition-colors">
+              <span>🚀</span> Founder, untoldopinion.com
+            </a>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-50 dark:bg-purple-950 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 text-xs font-medium">
+              <span>🤝</span> Founding Member, Product Bros
+            </span>
+          </motion.div>
 
           <motion.div variants={item} className="flex flex-wrap gap-4 mb-20">
             <a href="#projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-white font-semibold text-sm hover:bg-indigo-600 transition-colors shadow-lg shadow-indigo-500/25">
