@@ -40,13 +40,18 @@ export default function Hero() {
             From 0→1 platforms to LLM-powered features — outcome-obsessed, execution-driven.
           </motion.p>
 
-          <motion.div variants={item} className="flex flex-wrap gap-2 mb-8">
+          <motion.div variants={item} className="flex flex-wrap gap-3 mb-8">
             <a href="https://untoldopinion.com" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-medium hover:bg-indigo-100 dark:hover:bg-indigo-900 transition-colors">
-              <span>🚀</span> Founder, untoldopinion.com
+              className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-violet-500 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-105 transition-all duration-200">
+              <span className="w-1.5 h-1.5 rounded-full bg-white/80 animate-pulse" />
+              Founder · untoldopinion.com
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-50 dark:bg-purple-950 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 text-xs font-medium">
-              <span>🤝</span> Founding Member, Product Bros
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-violet-500 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-purple-500/30">
+              <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
+              Founding Member · Product Bros
             </span>
           </motion.div>
 
